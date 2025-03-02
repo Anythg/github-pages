@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(150deg, #1C7AB8, #EDC1C0, #C3A8C7);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh); opacity: 1;}
+            100% { transform: translateY(-100vh); opacity: 0;}
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #ffffff;
+            text-shadow: 0 0 20px #ff0062;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); text-shadow: 0 0 15px indianred;}
+            to {transform: scale(1.03); text-shadow: 0 0 30px #ff0062;}
+        }
+
+        .sender {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: indianred;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            background-color: rgb(148, 64, 64);
+        }
+    </style>
+</head>
+<body>
+    <div class="heart" style="left: 10%; animation-duration: 6s;">🎈</div>
+    <div class="heart" style="left: 25%; animation-duration: 4s;">🎁</div>
+    <div class="heart" style="left: 40%; animation-duration: 5.5s;">🎈</div>
+    <div class="heart" style="left: 60%; animation-duration: 4.5s;">🎁</div>
+    <div class="heart" style="left: 80%; animation-duration: 6.5s;">🎈</div>
+
+    <div class="card">
+        <h1>🥳🎉Happy Birthday!🎂🎈</h1>
+        <p>Kepada <b>Mareta</b></p>
+        <p>
+            Hari ini 18 Maret 2025 adalah hari spesialmu, semoga kebahagiaan, cintaa, dan 
+            kesuksesan selalu menyertaimu. Teruslah bersinar dan meraih impianmu! 
+        </p>
+        <p>
+            Semoga tahun ini membawa banyak berkah dan kebahagiaan. Selamat Ulang Tahun, hehe🎈
+        </p>
+        <p class="sender">With love, Aing😽</p>
+        <p>anjay with love gak tuh, emojinya bikin merinding wkwk</p>
+        <a href="index.html"><button>Klik untuk kejutan!!</button></a>
+    </div>
+</body>
+</html>
